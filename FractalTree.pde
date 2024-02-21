@@ -32,7 +32,7 @@ public void drawBranches(int x,int y, double branchLength, double angle){
   if(colormode==0)
     stroke((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
   else if(colormode==1)
-    stroke(mouseX,mouseY,(int)(Math.random()*150)+105);
+    stroke(mouseX/2,mouseY/2,(int)(Math.random()*150)+105);
   line(x,y,endX1,endY1);
   line(x,y,endX2,endY2);
   if(branchLength>smallestBranch){
